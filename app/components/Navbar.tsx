@@ -41,6 +41,18 @@ export const Navbar = () => {
         </Link>
 
       </nav>
+
+      {/* Auth Buttons - Hidden on Home Page since it has its own layout */}
+      {pathname !== "/" && (
+        <div className="hidden lg:flex items-center gap-4 ml-auto">
+          <button className="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors cursor-pointer border border-gray-100">
+            Login
+          </button>
+          <button className="bg-[#114232] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[#0d3326] transition-colors cursor-pointer">
+            Sign Up
+          </button>
+        </div>
+      )}
     </header>
   );
 };
