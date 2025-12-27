@@ -3,7 +3,7 @@ import { Image as ImageIcon, Plus } from "lucide-react";
 
 export const SatisfiedCustomersSection = () => {
   return (
-    <section className="py-20 px-8 md:px-12 lg:px-20 bg-white">
+    <section className="py-20 px-8 md:px-12 lg:px-20 bg-gray-50">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
         
         {/* Left Side: Content */}

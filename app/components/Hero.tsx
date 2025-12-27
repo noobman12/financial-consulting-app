@@ -23,13 +23,13 @@ export const Hero = () => {
       </p>
 
       {/* Buttons */}
-      <div className="flex flex-wrap items-center gap-4">
-        <button className="bg-[#114232] text-white px-8 py-3.5 rounded-full font-medium flex items-center gap-2 hover:bg-[#0d3326] transition-colors cursor-pointer">
+      <div className="flex flex-wrap items-center gap-6">
+        <button className="bg-[#114232] text-white px-8 py-3.5 rounded-full font-medium flex items-center gap-2 hover:bg-[#0d3326] transition-colors cursor-pointer shadow-lg shadow-green-900/20">
           Get Started
           <ArrowRight className="w-4 h-4" />
         </button>
-        <button className="bg-white border border-gray-200 text-gray-900 px-8 py-3.5 rounded-full font-medium flex items-center gap-2 hover:bg-gray-50 transition-colors cursor-pointer">
-          Explore More
+        <button className="text-gray-900 font-semibold flex items-center gap-2 hover:gap-3 transition-all cursor-pointer">
+          Subscribe
           <ArrowRight className="w-4 h-4" />
         </button>
       </div>

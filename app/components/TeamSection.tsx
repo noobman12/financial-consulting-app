@@ -3,30 +3,30 @@ import { Image as ImageIcon, User } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Annette Black",
-    role: "Customer Support Specialist",
+    name: "Austin Beck",
+    role: "Financial Strategy Specialist",
     isActive: false,
   },
   {
     name: "Brooklyn Simmons",
-    role: "Chief Technology Officer (CTO)",
+    role: "Risk Management Expert (CFP)",
     isActive: false,
   },
   {
-    name: "Jacob Jones",
-    role: "Cybersecurity Expert",
+    name: "Operations Team",
+    role: "Operations",
     isActive: true,
-    bio: "As the Cybersecurity Expert at Trustfin, Jacob plays a pivotal role in safeguarding the company's digital assets, ensuring that sensitive financial data and transactions remain secure from potential threats. With over 7 years of experience in cybersecurity, particularly within the financial sector, Jacob brings deep expertise in developing, implementing, and overseeing comprehensive security measures.",
-    experience: "7 Years+ Experience",
+    bio: "Guiding companies through strategic shifts, scaling operations, and optimizing financial workflows. Skilled in cross-functional leadership and stakeholder engagement to ensure measurable outcomes and sustainable growth.",
+    experience: "Contact Us",
   },
   {
     name: "Savannah Nguyen",
-    role: "Chief Financial Officer (CFO)",
+    role: "Corporate Finance Advisor (CPA)",
     isActive: false,
   },
   {
-    name: "Annette Black",
-    role: "Customer Support Specialist",
+    name: "Amélie Laurent",
+    role: "Investment Analyst",
     isActive: false,
   },
 ];
@@ -64,8 +64,8 @@ export const TeamSection = () => {
                         <User className="w-6 h-6 text-white" />
                      </div>
                      <div>
-                        <h3 className="font-bold text-lg">{member.name}</h3>
-                        <p className="text-xs text-gray-300">{member.role}</p>
+                        <h3 className="font-bold text-lg">Dedicated Advisors</h3>
+                        <p className="text-xs text-gray-300">Expert Team</p>
                      </div>
                   </div>
 

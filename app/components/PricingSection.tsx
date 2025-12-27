@@ -118,7 +118,7 @@ export const PricingSection = () => {
           {/* Business Plan (Highlighted) */}
           <PricingCard
             title="Business Plan"
-            price="$60.00"
+            price="$50.00"
             description="The Business Plan on Trustfin is designed for growing businesses that require comprehensive financial management tools and premium support."
             isPopular={true}
           />

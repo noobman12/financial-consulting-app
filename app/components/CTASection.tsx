@@ -22,14 +22,12 @@ export const CTASection = () => {
         </p>
 
         {/* Subscription Form */}
-        <div className="bg-white p-2 rounded-full max-w-lg mx-auto flex items-center shadow-lg">
-          <input 
-            type="email" 
-            placeholder="Enter Email Address" 
-            className="flex-1 px-6 py-2 text-gray-700 placeholder-gray-400 bg-transparent outline-none text-sm"
-          />
-          <button className="bg-[#a3e635] text-[#114232] font-bold px-8 py-3 rounded-full hover:bg-[#92d02e] transition-colors">
-            Subscribe
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button className="bg-[#a3e635] text-[#114232] font-bold px-8 py-3.5 rounded-full hover:bg-[#92d02e] transition-colors shadow-lg shadow-lime-400/20 w-full sm:w-auto">
+            Contact Now
+          </button>
+          <button className="border border-white text-white font-bold px-8 py-3.5 rounded-full hover:bg-white/10 transition-colors w-full sm:w-auto">
+            Schedule a Call
           </button>
         </div>
       </div>

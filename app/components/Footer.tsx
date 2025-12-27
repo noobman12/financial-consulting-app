@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Linkedin, Twitter, Sparkles } from "lucide-react";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -17,29 +18,24 @@ export const Footer = () => {
           </div>
 
           {/* Links Columns */}
-          <div className="lg:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-8">
-            {/* Features */}
+          <div className="lg:w-3/4 grid grid-cols-2 md:grid-cols-5 gap-8">
+            {/* Company */}
             <div>
-              <h4 className="font-bold text-gray-900 mb-6">Features</h4>
+              <h4 className="font-bold text-gray-900 mb-6">Company</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">About Us</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Service</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Pricing</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Industry Insight</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Our Team</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Testimonials</a></li>
+                <li><Link href="/about" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">About Us</Link></li>
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Careers</Link></li>
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Press</Link></li>
               </ul>
             </div>
 
-            {/* Solutions */}
+            {/* Services */}
             <div>
-              <h4 className="font-bold text-gray-900 mb-6">Solutions</h4>
+              <h4 className="font-bold text-gray-900 mb-6">Services</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">eCommerce</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Finance Automation</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Crypto</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Global Business</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Marketplaces</a></li>
+                <li><Link href="/service" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Personal Finance</Link></li>
+                <li><Link href="/service" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Investment Planning</Link></li>
+                <li><Link href="/service" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Business Advisory</Link></li>
               </ul>
             </div>
 
@@ -47,21 +43,28 @@ export const Footer = () => {
             <div>
               <h4 className="font-bold text-gray-900 mb-6">Resources</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Tutorials</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Blog</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Community</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Privacy Policy</a></li>
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Guides</Link></li>
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">FAQs</Link></li>
               </ul>
             </div>
 
-            {/* About */}
+            {/* Support */}
             <div>
-              <h4 className="font-bold text-gray-900 mb-6">About</h4>
+              <h4 className="font-bold text-gray-900 mb-6">Support</h4>
               <ul className="space-y-4">
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Company</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Careers</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">FAQ</a></li>
-                <li><a href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Contact Us</a></li>
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Help Center</Link></li>
+                <li><Link href="/contact" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Contact Support</Link></li>
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Status</Link></li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h4 className="font-bold text-gray-900 mb-6">Legal</h4>
+              <ul className="space-y-4">
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Terms of Service</Link></li>
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Privacy Policy</Link></li>
+                <li><Link href="#" className="text-gray-500 hover:text-[#114232] text-sm transition-colors">Cookie Policy</Link></li>
               </ul>
             </div>
           </div>

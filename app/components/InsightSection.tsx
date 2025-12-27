@@ -11,39 +11,6 @@ export const InsightSection = () => {
            {/* Main Grey Container Placeholder */}
            <div className="w-[80%] h-[450px] bg-gray-200 rounded-2xl relative flex items-center justify-center">
               <ImageIcon className="w-16 h-16 text-gray-400 opacity-50" />
-              
-              {/* Floating Card 1: Upgrade Plan (Top Left) */}
-              <div className="absolute -top-12 -left-4 md:-left-12 bg-white p-5 rounded-2xl shadow-xl w-64 z-10">
-                 <div className="flex items-start gap-3 mb-3">
-                    <div className="bg-[#114232] p-2 rounded-lg">
-                       <Diamond className="w-5 h-5 text-white" fill="currentColor" />
-                    </div>
-                    <div>
-                       <h4 className="font-bold text-gray-900 text-sm">Upgrade plan</h4>
-                       <p className="text-xs text-gray-500">Your free trial will be over</p>
-                    </div>
-                 </div>
-                 {/* Progress Bar */}
-                 <div className="w-full bg-gray-100 h-2 rounded-full mb-2">
-                    <div className="bg-[#114232] h-2 rounded-full w-[70%]"></div>
-                 </div>
-                 <p className="text-xs font-bold text-[#114232]">Day 5 of 7</p>
-              </div>
-
-              {/* Floating Card 2: Monthly Income (Bottom Right) */}
-              <div className="absolute -bottom-12 -right-4 md:-right-12 bg-white rounded-2xl shadow-xl w-64 z-10 overflow-hidden">
-                 <div className="p-5 pb-2">
-                    <p className="text-xs font-semibold text-gray-900 mb-1">Monthly Income</p>
-                    <h3 className="text-2xl font-bold text-gray-900">$14,890.00</h3>
-                 </div>
-                 <div className="bg-[#114232] p-3 flex justify-between items-center mt-2">
-                    <span className="text-[10px] text-white/80">Total Monthly Income</span>
-                    <div className="flex items-center gap-1 text-white text-xs font-bold">
-                       <ArrowUp className="w-3 h-3" />
-                       <span>+2%</span>
-                    </div>
-                 </div>
-              </div>
            </div>
         </div>
 
