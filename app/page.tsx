@@ -17,8 +17,6 @@ import { CoreServiceSection } from "./components/CoreServiceSection";
 import { Footer } from "./components/Footer";
 import { AuthButtons } from "./components/AuthButtons";
 
-
-
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen font-sans bg-white">
@@ -27,7 +25,7 @@ export default function Home() {
         {/* Left Column - Main Content */}
         <div className="flex-1 flex flex-col relative z-10">
           <div className="px-8 md:px-12 lg:px-20 py-6">
-            <Navbar />
+            <Navbar showAuthButtons={false} />
           </div>
           <div className="flex-1 flex flex-col justify-center px-8 md:px-12 lg:px-20 pb-6">
             <Hero />

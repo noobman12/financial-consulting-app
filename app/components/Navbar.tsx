@@ -5,7 +5,7 @@ import { LayoutTemplate, ChevronDown } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import{ AuthButtons} from "./AuthButtons";
-export const Navbar = () => {
+export const Navbar = ({ showAuthButtons = true }: { showAuthButtons?: boolean }) => {
   const pathname = usePathname();
 
   const isActive = (path: string) => {
@@ -70,8 +70,8 @@ export const Navbar = () => {
       </nav>
 
       {/* Right Action Button */}
-      <div className="hidden lg:block ml-auto">
-        
+      <div className={`ml-auto ${showAuthButtons ? "" : "hidden"}`}>
+        <AuthButtons />
       </div>
     </header>
   );
